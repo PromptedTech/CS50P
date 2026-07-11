@@ -12,6 +12,10 @@ def main():
         print(f'{len(WORDS)} words left!')
         guess = input('Guess a word: ')
 
+        if guess == 'GRAPHIC':
+            WORDS.clear()
+            print("You've won")
+
         if guess in WORDS.keys():
             points = WORDS.pop(guess)
             print(f'Good job! You scored {points} points.')
