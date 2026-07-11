@@ -1,19 +1,28 @@
 def main():
-    print(write_letter('Mario', 'Princess Peach'))
-    print(write_letter('Luigi', 'Princess Peach'))
-    print(write_letter('Daisy', 'Princess Peach'))
-    print(write_letter('Yoshi', 'Princess Peach'))
+    guests_list = [
+        'Nakul',
+        'Shiva',
+        'Shailendra',
+        'Kabeer',
+        'Vihaan',
+        'Rohan',
+        'Jay',
+    ]
 
-def write_letter(reciver, sender):
+    for guest in guests_list:
+        print(write_letter(guest))
+
+
+def write_letter(receiver):
     return f"""
     +~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~+
-        Dear {reciver}, 
+        Dear {receiver}, 
 
-        You r cordially invited to a ball at
-        Peach's Castle ts evening, 7:00 PM.
+        You are cordially invited to a ball at
+        Peach's Castle this evening, 7:00 PM.
 
         Sincerely,
-        {sender}
+        Princess Peach
     +~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~+
     """
 
