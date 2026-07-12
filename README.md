@@ -46,6 +46,9 @@ python loops/bee.py
 No license has been added yet.
 
 
+
+## Git commands to rememeber:
+
 git status
 git add loops/newfile.py
 git commit -m "Add new file"
