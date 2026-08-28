@@ -12,13 +12,16 @@ def main():
         correct = False
 
         for i in range(3):
-            question = int(input(f'{x} + {y} = '))
+            try:
+                question = int(input(f'{x} + {y} = '))
 
-            if question == x + y:
-                score += 1
-                correct = True
-                break
-            else:
+                if question == x + y:
+                    score += 1
+                    correct = True
+                    break
+                else:
+                    print('EEE')
+            except ValueError:
                 print('EEE')
 
         if correct == False:
