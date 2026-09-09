@@ -12,3 +12,7 @@ def test_vowel_omitted():
 def test_int_error():
     with pytest.raises(TypeError):
         shorten(1)
+
+def test_num():
+    assert shorten("h3ll0") == "h3ll0"
+    assert shorten("12345") == "12345"
